@@ -3,8 +3,11 @@
 <title>
 Скоро узнаете!
 </title>
-
 <link rel="stylesheet" href="style.css" type="text/css">
+  
+    <link rel="stylesheet" href="flipclock.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="flipclock.js"></script>
 
 </head>
 
@@ -12,5 +15,26 @@
 
 Здесь будет таймер и потом вылетит гифка
 
+   <script type="text/javascript">
+  var clock;
+  $(document).ready(function() {
+   var clock;
+   clock = $('.clock').FlipClock({
+    clockFace: 'DailyCounter',
+    autoStart: false,
+    callbacks: {
+      stop: function() {
+      $('.message').html('Вперед!!!')
+      $<img src="https://99px.ru/sstorage/86/2016/02/mid_10852_2945.jpg">
+      }
+     }
+    });
+    clock.setTime(15); //Устанавливаем нужное время в секундах
+    clock.setCountdown(true); //Устанавливаем отсчет времени назад
+    clock.start(); //Запускаем отсчет
+  });
+</script>
+  
+  
 </body>
 </html>
