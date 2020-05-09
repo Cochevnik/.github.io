@@ -1,29 +1,19 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="flipclock.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="flipclock.js"></script>
-  </head>
-  <body>
-<div class="clock" style="margin:2em;"></div>
-<div class="message"></div>
- <script type="text/javascript">
-  var clock;
-  $(document).ready(function() {
-   var clock;
-   clock = $('.clock').FlipClock({
-    clockFace: 'DailyCounter',
-    autoStart: false,
-    callbacks: {
-      stop: function() {
-      $('.message').html('Время вышло')
-      }
-     }
-    });
-    clock.setTime(220880); //Устанавливаем нужное время в секундах
-    clock.setCountdown(true); //Устанавливаем отсчет времени назад
-    clock.start(); //Запускаем отсчет
-  });
-</script>
- </body>
-  </html>
+<head>
+<title>
+В мире животных - сайт о жизни животных и их повадках
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="Title" content="В мире животных - сайт о жизни животных и их повадках">
+<meta name="description" content="Жизнь диких животных в природе">
+<meta name="keywords" content="животные, дикие животные, жизнь животных, природа животных">
+<link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body>
+
+Это главная страница сайта "В мире животных"
+
+</body>
+</html>
