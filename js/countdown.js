@@ -30,10 +30,10 @@ CountdownTimer.prototype={
 function CDT(){
 
  // Set countdown limit
- var tl = new Date('2020/06/01 09:00:00');
+ var tl = new Date('2020/05/10 18:32:00');
 
  // You can add time's up message here
- var timer = new CountdownTimer('CDT',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Time is up!</span></span>');
+ var timer = new CountdownTimer('CDT',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Time is up! <img src="123.gif"></img></span></span>');
  timer.countDown();
 }
 window.onload=function(){
