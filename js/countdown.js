@@ -16,9 +16,9 @@ CountdownTimer.prototype={
   var me=this;
 
   if( ( this.tl - today ) > 0 ){
-   timer += '<span class="number-wrapper"><div class="line"></div><div class="caption">DAYS</div><span class="number day">'+day+'</span></span>';
-   timer += '<span class="number-wrapper"><div class="line"></div><div class="caption">HOURS</div><span class="number hour">'+hour+'</span></span>';
-   timer += '<span class="number-wrapper"><div class="line"></div><div class="caption">MINS</div><span class="number min">'+this.addZero(min)+'</span></span><span class="number-wrapper"><div class="line"></div><div class="caption">SECS</div><span class="number sec">'+this.addZero(sec)+'</span></span>';
+   timer += '<span class="number-wrapper"><div class="line"></div><div class="caption">ДНИ</div><span class="number day">'+day+'</span></span>';
+   timer += '<span class="number-wrapper"><div class="line"></div><div class="caption">ЧАСЫ</div><span class="number hour">'+hour+'</span></span>';
+   timer += '<span class="number-wrapper"><div class="line"></div><div class="caption">МИНУТЫ</div><span class="number min">'+this.addZero(min)+'</span></span><span class="number-wrapper"><div class="line"></div><div class="caption">СЕКУНДЫ</div><span class="number sec">'+this.addZero(sec)+'</span></span>';
    this.elem.innerHTML = timer;
    tid = setTimeout( function(){me.countDown();},10 );
   }else{
@@ -30,7 +30,7 @@ CountdownTimer.prototype={
 function CDT(){
 
  // Set countdown limit
- var tl = new Date('2020/05/10 19:17:00');
+ var tl = new Date('2020/05/10 19:50:00');
 
  // You can add time's up message here
  var timer = new CountdownTimer('CDT',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">У нас будет мальчик! <img src="6k1.gif"></img></span></span>');
