@@ -72,4 +72,4 @@ function get_timer() {
 alert(day + " : " + hour + " : " + min + " : " + sec);
 //Вызываем функцию на исполнение
 get_timer();
-});
+
