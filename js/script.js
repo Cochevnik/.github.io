@@ -69,12 +69,7 @@ function get_timer() {
  else {
   $("#clock").html("<span id='stop'>Отсчет закончен!!!</span>");
  }
-//Функция для красивого отображения времени.
-function animation(vibor,param) {
-	vibor.html(param)
-		.css({'marginTop':'-20px','opacity':'0'})
-		.animate({'marginTop':'0px','opacity':'1'});
-}
+alert(day + " : " + hour + " : " + min + " : " + sec);
 //Вызываем функцию на исполнение
 get_timer();
 });
