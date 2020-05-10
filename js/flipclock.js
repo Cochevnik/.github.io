@@ -4,7 +4,7 @@
    var clock;
    clock = $('.clock').FlipClock({
     clockFace: 'DailyCounter',
-    autoStart: false,
+    autoStart: true,
     callbacks: {
       stop: function() {
       $('.message').html('The clock has stopped!')
