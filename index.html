@@ -58,16 +58,16 @@
 
 </div>
 
-<script>
-	var date = new Date(2020, 6, 21);
-    var now = new Date();
-    var diff = (date.getTime()/1000) - (now.getTime()/1000);
+<script type="text/javascript">
+        var date = new Date("February 01, 2016 02:15:00"); //Month Days, Year HH:MM:SS
+        var now = new Date();
+        var diff = (date.getTime()/1000) - (now.getTime()/1000);
 
-    var clock = $('.clock').FlipClock(diff,{
-        clockFace: 'DailyCounter',
-        countdown: true
-    });  
-</script>
+        var clock = $('.clock').FlipClock(diff,{
+            clockFace: 'DailyCounter',
+            countdown: true
+        });
+    </script>
 
 <!-- END OF FLIP EXAMPLE PRESET -->
 
