@@ -1,79 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width">
-    <title>Рњ РёР»Рё Р–</title>
-
-    <link rel="stylesheet" href="flip.min.css">
-
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>	
+<link rel="stylesheet" href="style.css">
+<title>Таймер обратного отсчета</title>
 </head>
 <body>
-
-<!-- START OF FLIP EXAMPLE PRESET -->
-
-<style>
-    .tick {
-        font-size:1rem;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    }
-    
-    .tick-label {
-        font-size:.375em;
-        text-align:center;
-    }
-
-    .tick-group {
-        margin:0 .25em;
-        text-align:center;
-    }
-</style>
-
-<div class="tick"
-     data-did-init="handleTickInit">
-
-    <div data-repeat="true"
-         data-layout="horizontal center fit"
-         data-transform="preset(d, h, m, s) -> delay">
-
-        <div class="tick-group">
-
-            <div data-key="value"
-                 data-repeat="true"
-                 data-transform="pad(00) -> split -> delay">
-
-                <span data-view="flip"></span>
-
-            </div>
-
-            <span data-key="label"
-                  data-view="text"
-                  class="tick-label"></span>
-
-        </div>
-
-    </div>
-
-</div>
-
-<script type="text/javascript">
-        var date = new Date("February 01, 2021 02:15:00"); //Month Days, Year HH:MM:SS
-        var now = new Date();
-        var diff = (date.getTime()/1000) - (now.getTime()/1000);
-
-        var clock = $('.clock').FlipClock(diff,{
-            clockFace: 'DailyCounter',
-            countdown: true
-        });
-    </script>
-
-<!-- END OF FLIP EXAMPLE PRESET -->
-
-<script src="flip.min.js"></script>
-rrrrll <img src="123.gif"></img>
-
+	<div id="timer_wrap">
+		<div id="clock">
+			<div id='day'>
+				<p id='day0'></p>
+				<p id='day1'></p>
+			</div>
+			<div id="razd">
+				:
+			</div>
+			<div id='hour'>
+				<p id='hour0'></p>
+				<p id='hour1'></p>
+			</div>
+			<div id="razd">
+				:
+			</div>
+			<div id='min'>
+				<p id='min0'></p>
+				<p id='min1'></p>
+			</div>
+			<div id="razd">
+				:
+			</div>
+			<div id='sec'>
+				<p id='sec0'></p>
+				<p id='sec1'></p>
+			</div>
+		</div>		
+	</div>
 </body>
-</html>
 </html>
