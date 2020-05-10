@@ -59,14 +59,14 @@
 </div>
 
 <script>
-	function handleTickInit(tick) {
-        var nextYear = (new Date()).getFullYear() + 1;
-        
-		Tick.count.down(nextYear + '-01-01').onupdate = function(value) {
-			tick.value = value;
-        };
+	var date = new Date(2020, 6, 21);
+    var now = new Date();
+    var diff = (date.getTime()/1000) - (now.getTime()/1000);
 
-	}
+    var clock = $('.clock').FlipClock(diff,{
+        clockFace: 'DailyCounter',
+        countdown: true
+    });  
 </script>
 
 <!-- END OF FLIP EXAMPLE PRESET -->
