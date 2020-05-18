@@ -33,7 +33,7 @@ function CDT(){
  var tl = new Date('2020/05/18 11:25:00');
 
  // You can add time's up message here
- var timer = new CountdownTimer('CDT',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end"><video width="640" height="390" controls="controls" autoplay=1><source src="video/sova.mp4" type="video/mp4"></video></span></span>');
+ var timer = new CountdownTimer('CDT',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end"><video controls="controls" autoplay=1><source src="video/sova.mp4" type="video/mp4"></video></span></span>');
           timer.countDown();
 }
 window.onload=function(){
